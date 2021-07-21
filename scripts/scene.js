@@ -43,7 +43,7 @@ loader.load(
 );
 
 const renderer = new THREE.WebGLRenderer({ canvas: canvas });
-renderer.setClearColor("#75E2F8");
+renderer.setClearColor("#EBFAFF");
 
 const update = () => {
   if (model) {

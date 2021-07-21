@@ -1,17 +1,22 @@
 .link-icon {
-  width: 3em;
+  width: 5em;
   height: auto;
 }
 .bg-color-main {
-  background-color: #75e2f8;
+  background-color: #ebfaff;
+}
+.bg-color-dark {
+  background-color: #1e1e1e;
+}
+.navbar-logo {
+  width: 2em;
+  height: auto;
+}
+.navbar a {
+  color: #ebfaff;
+  text-decoration: none;
 }
 #canvas {
   width: 100%;
   height: auto;
 }
-/*
-    Colors
-    75E2F8
-    778DF8
-    F8778D
-*/
