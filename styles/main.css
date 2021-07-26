@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .link-icon {
   width: 5em;
   height: auto;
@@ -12,11 +14,43 @@
   width: 2em;
   height: auto;
 }
-.navbar a {
+.navbar {
+  font-family: "Roboto", sans-serif;
+}
+.navbar-dark .navbar-brand {
   color: #ebfaff;
-  text-decoration: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ebfaff;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #4cc9f0;
+  font-weight: bold;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f72585;
 }
 #canvas {
   width: 100%;
   height: auto;
+}
+.about-me-container {
+  color: #ebfaff;
+  font-family: "Roboto", sans-serif;
+}
+.my-picture {
+  width: 100%;
+  height: auto;
+}
+.cv-icon {
+  width: 3em;
+  height: auto;
+}
+.custom-link {
+  color: #f72585;
+  text-decoration: none;
+}
+.custom-link:hover {
+  color: #4cc9f0;
+  font-weight: bold;
 }
