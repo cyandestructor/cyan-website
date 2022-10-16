@@ -59,3 +59,8 @@
   color: #1e1e1e;
   font-weight: bold;
 }
+.btn-cyan img {
+  width: 27px;
+  height: auto;
+  margin-right: 5px;
+}
