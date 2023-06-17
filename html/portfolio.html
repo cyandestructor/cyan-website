@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
-    <title>Home | CyanDestructor</title>
+    <title>Portfolio | Cyandestructor</title>
   </head>
   <body class="bg-color-main">
     <div class="container-fluid">
@@ -49,7 +49,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html"
+              <a class="nav-link" aria-current="page" href="/index.html"
                 >Home</a
               >
             </li>
@@ -57,7 +57,7 @@
               <a class="nav-link" href="/html/about-me.html">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/html/portfolio.html">Portfolio</a>
+              <a class="nav-link active" href="/html/portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/html/contact.html">Contact</a>
@@ -68,68 +68,40 @@
     </div>
     <!-- End Navbar -->
 
-    <!-- Scene -->
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-11 my-2">
-          <canvas
-            id="canvas"
-            class="d-block mx-auto"
-            width="1680"
-            height="720"
-          ></canvas>
+    <!-- Begin main content -->
+    <div class="container bg-color-dark my-3 p-5 about-me-container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <div class="card portfolio-card">
+                    <img src="/assets/images/placeholders/demo_image_1.png" class="card-img-top p-2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <div class="card portfolio-card">
+                    <img src="/assets/images/placeholders/demo_image_2.png" class="card-img-top p-2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <div class="card portfolio-card">
+                    <img src="/assets/images/placeholders/demo_image_3.png" class="card-img-top p-2" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- End Scene -->
+    <!-- End main content -->
 
-    <!-- Social Media -->
-    <div class="container">
-      <ul class="row list-unstyled justify-content-center">
-        <li class="col-2">
-          <a
-            href="https://www.linkedin.com/in/bryan-duarte-lozano-cyandestructor/"
-            target="_blank"
-            class="d-block link-icon mx-auto"
-          >
-            <img
-              src="/assets/icons/linkedin-icon.svg"
-              alt="LinkedIn icon"
-              class="img-fluid"
-            />
-          </a>
-        </li>
-        <li class="col-2">
-          <a
-            href="https://github.com/cyandestructor"
-            target="_blank"
-            class="d-block link-icon mx-auto"
-          >
-            <img
-              src="/assets/icons/github-icon.svg"
-              alt="Github icon"
-              class="img-fluid"
-            />
-          </a>
-        </li>
-        <li class="col-2">
-          <a
-            href="https://twitter.com/cyandestructor"
-            target="_blank"
-            class="d-block link-icon mx-auto"
-          >
-            <img
-              src="/assets/icons/twitter-icon.svg"
-              alt="Twitter icon"
-              class="img-fluid"
-            />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- End Social Media -->
-
-    <script type="module" src="/scripts/scene.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
