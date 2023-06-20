@@ -11,21 +11,33 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.153.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.153.0/examples/jsm/"
+        }
+      }
+    </script>
+
     <title>Home | CyanDestructor</title>
   </head>
   <body class="bg-color-main">
     <div class="container-fluid">
       <!-- Navbar -->
       <nav
-        class="
-          navbar navbar-expand-lg
-          bg-color-dark
-          navbar-dark
-          rounded
-          mt-3
-          p-2
-        "
+        class="navbar navbar-expand-lg bg-color-dark navbar-dark rounded mt-3 p-2"
       >
         <a class="navbar-brand mx-2" href="/index.html">
           <img

@@ -1,5 +1,5 @@
-import * as THREE from "https://cdn.skypack.dev/three";
-import { GLTFLoader } from "https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js";
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 
 const canvas = document.getElementById("canvas");
 
@@ -12,14 +12,14 @@ const camera = new THREE.PerspectiveCamera(
 );
 const clock = new THREE.Clock();
 
-const light = new THREE.AmbientLight(0xffffff, 0.75); // soft white light
+const light = new THREE.AmbientLight(0xffffff, 0.3); // soft white light
 scene.add(light);
 
-const blueDirectionalLight = new THREE.DirectionalLight(0x778df8, 1.0);
+const blueDirectionalLight = new THREE.DirectionalLight(0x6EEAE2, 0.75);
 blueDirectionalLight.position.x = -15;
 scene.add(blueDirectionalLight);
 
-const pinkDirectionalLight = new THREE.DirectionalLight(0xf8778d, 0.5);
+const pinkDirectionalLight = new THREE.DirectionalLight(0xFF28C9, 0.75);
 pinkDirectionalLight.position.x = 15;
 scene.add(pinkDirectionalLight);
 
@@ -29,7 +29,7 @@ const loader = new GLTFLoader();
 
 let model = null;
 loader.load(
-  "/assets/models/skull.gltf",
+  "/assets/models/skull.glb",
   (gltf) => {
     model = gltf.scene;
     if (model) {
