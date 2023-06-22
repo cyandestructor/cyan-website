@@ -5,7 +5,7 @@ const canvas = document.getElementById("canvas");
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
-  75,
+  canvas.clientWidth < 350 ? 85 : 75,
   canvas.clientWidth / canvas.clientHeight,
   0.1,
   1000
