@@ -57,4 +57,12 @@ const animate = () => {
   renderer.render(scene, camera);
 };
 
+window.onresize = function(event) {
+  camera.aspect = canvas.clientWidth / canvas.clientHeight;
+
+  camera.fov = canvas.clientWidth < 350 ? 85 : 75;
+
+  camera.updateProjectionMatrix();
+};
+
 animate();

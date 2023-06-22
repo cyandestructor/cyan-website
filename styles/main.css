@@ -33,10 +33,6 @@
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #f72585;
 }
-#canvas {
-  width: 100%;
-  height: auto;
-}
 .about-me-container {
   color: #ebfaff;
   font-family: "Roboto", sans-serif;
@@ -73,4 +69,7 @@
 }
 .portfolio-card:hover {
   background-color:#f72585;
+}
+.vh-75 {
+  height: 75vh;
 }
